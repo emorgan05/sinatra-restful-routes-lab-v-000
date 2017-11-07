@@ -1,11 +1,5 @@
 <h1>Recipe for: <%= @recipe.name %></h1>
-<p>Ingredients:</p>
-<ol>
-  <% array = @recipe.ingredients.split(" ") %>
-  <% array.each do |ingredient| %>
-    <li><%= ingredient %></li>
-    <% end %>
-</ol>
+<p>Ingredients: <%= @recipe.ingredients %></p>
 <p>Cook Time: <%= @recipe.cook_time %></p>
 
 <form method="POST" action="/recipes/:id/delete">
