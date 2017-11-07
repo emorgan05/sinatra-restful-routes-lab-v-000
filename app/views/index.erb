@@ -2,7 +2,7 @@
 
 <% @recipes.each_with_index do |recipe, index| %>
   <ul>
-    <li><%= index %></li>
+    <li><%= index + 1 %></li>
     <li>Name: <%= recipe.name %></li>
     <li>Ingredients: <%= recipe.ingredients %></li>
     <li>Cook Time: <%= recipe.cook_time %></li>
